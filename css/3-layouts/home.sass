@@ -1,13 +1,15 @@
-.boxes
-  +clearfix
+.bullets
+  +outer-container
+  padding: 100px
+
+article
   +outer-container
 
-.box
-  background: tint(red, 60%)
-  +size(100px)
-  float: left
-  +span-columns(3)
+  > *
+    +span-columns(8)
+    +shift(4)
 
-p
-  font-family: $font-stack-helvetica
+.grid-items-lines
   +outer-container
+  margin-top: 100px
+  margin-bottom: 100px
