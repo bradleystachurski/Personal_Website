@@ -222,6 +222,36 @@ header {
     }
 }
 
+// Middle Hero Section
+
+#middle-hero {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    .background-cover;
+    background-position: center;
+    background-image: url('../img/middle-hero-bg.jpg');
+    text-align: center;
+    color: white;
+    .middle-hero-content {
+        position: relative;
+        text-align: center;
+        padding: 100px 15px 100px;
+        width: 100%;
+    }
+    @media (min-width: 768px) {
+        min-height: 100%;
+        .middle-hero-content {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            padding: 0 50px;
+        }
+    }
+}
+
 // Sections
 
 .section-heading {
